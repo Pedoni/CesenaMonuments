@@ -93,12 +93,12 @@ public class MainActivity extends AppCompatActivity {
             new Interpreter(loadModelFile()).run(tImage.getBuffer(), probabilityBuffer.getBuffer());
             String[] classes = {
                     "Chiesa di San Giovanni Battista",
+                    "Colonna dell'Ospitalità",
                     "Fontana Masini",
                     "Giardini Pubblici",
                     "Palazzo del Ridotto",
                     "Ponte Vecchio",
                     "Rocca Malatestiana",
-                    "Statua di Maurizio Bufalini",
                     "Teatro Bonci"
             };
             int maxPos = getMaxPosition(probabilityBuffer.getFloatArray());
