@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             int maxPos = getMaxPosition(probabilityBuffer.getFloatArray());
             result.setText(classes[maxPos]);
             results = probabilityBuffer.getFloatArray();
+            details.setEnabled(true);
         } catch (IOException e) {
             e.printStackTrace();
         }
