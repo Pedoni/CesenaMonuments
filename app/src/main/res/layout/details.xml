@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#392E20"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sangiovanni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/san_giovanni_battista"/>
+
+    <TextView
+        android:id="@+id/colonna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/sangiovanni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/colonna_dell_ospitalita"/>
+
+    <TextView
+        android:id="@+id/fontana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/colonna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/fontana_masini"/>
+
+    <TextView
+        android:id="@+id/giardini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/fontana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/giardini_pubblici"/>
+
+    <TextView
+        android:id="@+id/ridotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/giardini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/palazzo_del_ridotto"/>
+
+    <TextView
+        android:id="@+id/ponte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/ridotto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/ponte_vecchio"/>
+
+    <TextView
+        android:id="@+id/rocca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/ponte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/rocca_malatestiana"/>
+
+    <TextView
+        android:id="@+id/bonci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toBottomOf="@id/rocca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="@string/teatro_bonci"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

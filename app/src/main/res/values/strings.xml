@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Cesena Monuments</string>
+    <string name="san_giovanni_battista">San Giovanni Battista:</string>
+    <string name="colonna_dell_ospitalita">Colonna dell\'Ospitalità:</string>
+    <string name="fontana_masini">Fontana Masini:</string>
+    <string name="giardini_pubblici">Giardini Pubblici:</string>
+    <string name="palazzo_del_ridotto">Palazzo del Ridotto:</string>
+    <string name="ponte_vecchio">Ponte Vecchio:</string>
+    <string name="rocca_malatestiana">Rocca Malatestiana:</string>
+    <string name="teatro_bonci">Teatro Bonci:</string>
 </resources>
