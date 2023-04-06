@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void classifyImage(Bitmap image) {
         ImageProcessor imageProcessor =
-                new ImageProcessor.Builder()
-                        .add(new ResizeOp(224, 224, ResizeOp.ResizeMethod.BILINEAR))
-                        .add(new NormalizeOp(127.5f, 127.5f))
-                        .build();
+            new ImageProcessor.Builder()
+                .add(new ResizeOp(224, 224, ResizeOp.ResizeMethod.BILINEAR))
+                .add(new NormalizeOp(127.5f, 127.5f))
+                .build();
         TensorImage tImage = new TensorImage(DataType.FLOAT32);
         tImage.load(image);
         tImage = imageProcessor.process(tImage);
@@ -92,14 +92,14 @@ public class MainActivity extends AppCompatActivity {
         try {
             new Interpreter(loadModelFile()).run(tImage.getBuffer(), probabilityBuffer.getBuffer());
             String[] classes = {
-                    "Chiesa di San Giovanni Battista",
-                    "Colonna dell'Ospitalità",
-                    "Fontana Masini",
-                    "Giardini Pubblici",
-                    "Palazzo del Ridotto",
-                    "Ponte Vecchio",
-                    "Rocca Malatestiana",
-                    "Teatro Bonci"
+                "Chiesa di San Giovanni Battista",
+                "Colonna dell'Ospitalità",
+                "Fontana Masini",
+                "Giardini Pubblici",
+                "Palazzo del Ridotto",
+                "Ponte Vecchio",
+                "Rocca Malatestiana",
+                "Teatro Bonci"
             };
             int maxPos = getMaxPosition(probabilityBuffer.getFloatArray());
             result.setText(classes[maxPos]);
