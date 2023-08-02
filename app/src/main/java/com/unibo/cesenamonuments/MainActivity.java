@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0; i < monuments.size(); i++) {
             String text = classes[i] + ": ";
             float value = results[i];
-            monuments.get(i).setText(text + (value < 0.01 ? "<0.01%" : Math.floor(value * 100) / 100 + "%"));
+            monuments.get(i).setText(text + (value < 0.01 ? "<1%" : Math.floor(value * 100) + "%"));
         }
 
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
